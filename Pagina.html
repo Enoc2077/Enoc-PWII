@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mi Pizzería</title>
+  
+  <!-- Link de Bulma  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  
+
+  <link rel="stylesheet" href="Pagina.css">
+</head>
+<body>
+
+
+  <nav class="navbar" role="navigation" aria-label="dropdown navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        Mi Pizzería
+      </a>
+    </div>
+
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Menú
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">Pizzas</a>
+            <a class="navbar-item">Bebidas</a>
+            <a class="navbar-item">Postres</a>
+            <hr class="navbar-divider">
+            <div class="navbar-item">
+              Version 1.0.2
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Información
+          </a>
+
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item">Sobre Nosotros</a>
+            <a class="navbar-item">Contacto</a>
+            <hr class="navbar-divider">
+            <div class="navbar-item">
+              Versión 1.0.2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <p class="title">Bienvenido a Mi Pizzería</p>
+      <p class="subtitle">Las mejores pizzas de la ciudad, preparadas con amor.</p>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Sobre Nosotros</h1>
+      <p>
+        En Mi Pizzería, nos dedicamos a ofrecer la mejor experiencia culinaria a nuestros clientes. Utilizamos ingredientes frescos y recetas tradicionales para preparar deliciosas pizzas. Nuestro ambiente es acogedor y perfecto para disfrutar en familia o con amigos. ¡Te esperamos!
+      </p>
+    </div>
+  </section>
+
+<!-- Sección de Pizzas -->
+<section class="section">
+    <div class="container">
+      <h2 class="title">Nuestro Menú de Pizzas</h2>
+      <div class="columns is-centered">
+        <div class="column is-one-quarter">
+          <div class="media">
+            <figure class="media-left">
+              <p class="image is-128x128">
+                <img class="is-rounded" src="Foto/Peperoni.jpg" alt="Pizza de Peperoni">
+              </p>
+            </figure>
+            <div class="media-content">
+              <p>Pizza de Peperoni: Deliciosa y clásica, con mucho sabor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="media">
+            <figure class="media-left">
+              <p class="image is-128x128">
+                <img class="is-rounded" src="Foto/Hawayana.jpeg" alt="Pizza Hawaiana">
+              </p>
+            </figure>
+            <div class="media-content">
+              <p>Pizza Hawaiana: La combinación perfecta de dulce y salado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="media">
+            <figure class="media-left">
+              <p class="image is-128x128">
+                <img class="is-rounded" src="Foto/suprema.jpeg" alt="Pizza Suprena">
+              </p>
+            </figure>
+            <div class="media-content">
+              <p>Pizza Suprena: Con todo lo que te encanta en una pizza.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="media">
+            <figure class="media-left">
+              <p class="image is-128x128">
+                <img class="is-rounded" src="Foto/jamon.webp" alt="Pizza de Jamón">
+              </p>
+            </figure>
+            <div class="media-content">
+              <p>Pizza de Jamón: Simple y sabrosa, siempre una buena elección.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección de Bebidas -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title has-text-centered">Nuestras Bebidas</h2>
+      <div class="columns is-centered">
+        <div class="column is-one-quarter">
+          <figure class="image is-4by3">
+            <img src="Foto/Coca Cola.jpg" alt="Bebida 1">
+          </figure>
+        </div>
+        <div class="column is-one-quarter">
+          <figure class="image is-4by3">
+            <img src="Foto/sprite.jpeg" alt="Bebida 2">
+          </figure>
+        </div>
+        <div class="column is-one-quarter">
+          <figure class="image is-4by3">
+            <img src="Foto/Agua.jpg" alt="Bebida 3">
+          </figure>
+        </div>
+        <div class="column is-one-quarter">
+          <figure class="image is-4by3">
+            <img src="Foto/jugo natural.jpeg" alt="Bebida 4">
+          </figure>
+        </div>
+      </div>
+      <div class="content has-text-centered">
+        <p>Disfruta de una variedad de bebidas refrescantes en nuestro local. Cada bebida está hecha con los mejores ingredientes y con mucho amor.</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Formulario de Pedido -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title has-text-centered">Hacer un Pedido</h2>
+      <form id="orderForm">
+        <div class="field">
+          <label class="label">Tu Nombre</label>
+          <div class="control">
+            <input class="input" type="text" id="customerName" placeholder="Escribe tu nombre" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Selecciona tu Pizza</label>
+          <div class="control">
+            <div class="select">
+              <select id="pizzaSelect" required>
+                <option value="" disabled selected>Selecciona una pizza</option>
+                <option value="peperoni">Pizza de Peperoni</option>
+                <option value="hawaiiana">Pizza Hawaiana</option>
+                <option value="suprena">Pizza Suprena</option>
+                <option value="jamon">Pizza de Jamón</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Selecciona tu Bebida</label>
+          <div class="control">
+            <div class="select">
+              <select id="drinkSelect" required>
+                <option value="" disabled selected>Selecciona una bebida</option>
+                <option value="cola">Cola</option>
+                <option value="sprite">Sprite</option>
+                <option value="agua">Agua</option>
+                <option value="jugo">Jugo Natural</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <button class="button is-primary" type="submit">Ordenar</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="notification is-hidden" id="orderMessage"></div>
+    </div>
+  </section>
+  
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>© 2024 Mi Pizzería. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+</body>
+</html>
